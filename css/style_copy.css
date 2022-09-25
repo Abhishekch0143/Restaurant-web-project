@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+}
+body {
+    margin: 0;
+    position: relative
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+
+/* Login bar or we can say topmost header */
+.top-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #232b38;
+}
+.social-link,.login-link {
+    padding: .8em;
+}
+
+.social-link a {
+    padding: .5em;
+    color: white;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: none;
+    font-family: prototype, Arial, Helvetica, sans-serif;
+    padding-right: .5em;
+    border-right: .1em solid white;
+}
+
+.login-link a:hover {
+    color: orange;
+}
+
+.login-link a:last-child {
+    border: none;
+}
+
+.social-icon:hover, .fa-solid.fa-clock-nine {
+    color: orange;
+}
+
+
+/* mid-header portion  */
+.mid-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.mid-header-column1, .mid-header-column3 {
+    display: flex;
+    padding: 1em;
+    font-size: 1vw;
+    font-family: prototype, Arial, Helvetica, sans-serif;
+}
+.mid-header-column2 {
+    font-size: 3vw;
+    font-weight: 700;
+    color: orange;
+    font-family: 'Great Vibes', cursive,Arial, Helvetica, sans-serif;
+}
+
+.fa-phone {
+    color: orange;
+    vertical-align: super;
+    font-size: 1.2vw;
+    padding-right: .2em;
+}
+
+/* Main Navbar or last header */
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 10em 10em 10em 10em 10em 10em 10em 10em;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0.1em 0.1em 0.8em rgb(146, 146, 146);
+    z-index: 2;
+}
+
+.nav-grid-item a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: adventure,Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav-grid-item a:hover {
+    background-color: orange;
+    color: white;
+}
+
+
+@media (max-width: 800px) {
+    .top-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mid-header {
+        padding: 1vw;
+    }
+
+    .mid-header-column1, .mid-header-column3 {
+        font-size: 1.5vw;
+    }
+    .mid-header-column2 {
+        font-size: 4vw;
+    }
+}

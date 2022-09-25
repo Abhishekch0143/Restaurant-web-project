@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    position: relative
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+
+/* Login bar or we can say topmost header */
+.top-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    background-color: #232b38;
+    padding: .8em;
+}
+
+.social-link a {
+    padding: .5em;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: none;
+    font-family: prototype, Arial, Helvetica, sans-serif;
+    padding-right: 1em;
+    border-right: .1em solid white;
+}
+
+.login-link a:hover {
+    color: orange;
+}
+
+.login-link a:last-child {
+    border: none;
+}
+
+.social-icon {
+    color: white;
+}
+
+.social-icon:hover, .fa-solid.fa-clock-nine {
+    color: orange;
+}
+
+
+/* mid-header portion  */
+.mid-header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.mid-header-column1, .mid-header-column3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+    font-size: 1em;
+    font-family: prototype, Arial, Helvetica, sans-serif;
+}
+.mid-header-column2 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: orange;
+    font-family: 'Great Vibes', cursive,Arial, Helvetica, sans-serif;
+}
+
+.fa-phone {
+    color: orange;
+    vertical-align: super;
+    font-size: 1.3em;
+    padding-right: .2em;
+}
+
+/* Main Navbar or last header */
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 10em 10em 10em 10em 10em 10em 10em 10em;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0.1em 0.1em 0.8em rgb(146, 146, 146);
+    z-index: 2;
+}
+
+.nav-grid-item a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: adventure,Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav-grid-item a:hover {
+    background-color: orange;
+    color: white;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Section part of the website */
+.row1-image {
+    background-image: url('./Responsive-restaurant-website-master/images/food.jpg');
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    min-height: 700px;
+    min-width: 1280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row1-content {
+    position: absolute;
+    z-index: 1;
+    transform: translate(10%, -100%);
+    padding-bottom: 2em;
+}
+
+.row1-content p {
+    font-size: 2em;
+    font-family: cursive;
+    user-select: none;
+
+}
+
+.row1-content p span {
+    font-size: 2em;
+    font-weight: 700;
+    color: orange;
+    font-weight: bolder;
+    font-family: 'Great Vibes', cursive;
+    text-shadow: 2px 5px 3px black;
+    user-select: none;
+
+
+}
+
+.row1-content h3 {
+    font-size: 3em;
+    font-family: electrical, magneto, arial;
+    color: black;
+    user-select: none;
+
+}
+
+.btn {
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    margin-right: .7em;
+    color: white;
+    border: none;
+    border-radius: .3em;
+}
+
+.btn.lft {
+    background-color: black
+    
+}
+
+.btn.lft:hover {
+    background-color: white;
+    color: orange;
+    border: .1em solid black;
+    cursor: pointer;
+}
+
+.btn.rgt {
+    background-color: white;
+    color: black;
+    border: 0.1rem solid orange;
+}
+
+.btn.rgt:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.row2 {
+    background-color: #f0f0f0;
+}
+
+.row2 h2 {
+    text-align: center;
+    font-family: They perished, Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+}
+.row2-block>h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url('/Responsive-restaurant-website-master/icons/hr.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row3 {
+    display: grid;
+    width: 100vw;
+    grid-template-rows: auto auto;
+}
+
+.row3 h2 {
+    text-align: center;
+    font-family: They perished, Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+}
+
+.row3>h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url('/Responsive-restaurant-website-master/icons/hr.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row3-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.row3-image {
+    display: inline;
+    background-image: url('/Responsive-restaurant-website-master/images/yogurt.png');
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.row3-btn {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    border: none;
+    border-radius: .3em;
+}
+
+.row3-btn:hover {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    cursor: pointer;
+}
