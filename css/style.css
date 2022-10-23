@@ -109,7 +109,7 @@ nav a:hover {
 
 /* Section part of the website */
 .row1-image {
-    background-image: url('images/food.jpg');
+    background-image: url('.images/food.jpg');
     filter: blur(2px);
     -webkit-filter: blur(2px);
     min-height: 600px;
